@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    
+    .container {
+      height: 748px;
+      width: 748px;
+      background-color: #F0F1EC;
+      display: grid;
+      grid-template-columns: 1fr 193px 1fr 1fr; 
+      grid-template-rows: 1fr 143px 164px 29px;
+    }
+
+    .first {
+      background-color: #E72F24;
+      height: 405px;
+      width: 320px;
+    }
+    .first, .third, .fourth, .seventh, .eigth, .ninth{
+      border-right: 9px solid #000;
+    }
+    .first, .second, .third, .fourth, .fith{
+      border-bottom: 9px solid #000;
+    }
+    .second {
+      grid-column: span 3;
+    }
+    .third {
+      height: 300px;
+      grid-row: span 2;
+    }
+    .fourth {
+      width: 360px;
+      height: 300px;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .sixth {
+      border-top: 6px solid #000;
+    }
+    .eigth {
+      background-color: #F9D01E;
+     
+    }
+    .ninth{
+      background-color: #232629;
+      
+      
+    }
+    .fith {
+      background-color: #004592;
+    
+    }
+    .tenth {
+      width: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="fith"></div>
+    <div class="sixth"></div>
+    <div class="seventh"></div>
+    <div class="eigth"></div>
+    <div class="ninth"></div>
+    <div class="tenth"></div>
+  </div>
+</body>
+
+</html>
